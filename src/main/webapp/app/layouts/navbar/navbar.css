@@ -36,6 +36,7 @@ Navbar
 
 .jh-navbar a.nav-link {
     font-weight: 400;
+    color: #000000;
 }
 
 .jh-navbar .jh-navbar-toggler {
@@ -73,10 +74,10 @@ Logo styles
 }
 
 .logo .logo-img {
-    height: 45px;
+    height: 60px;
     display: inline-block;
     vertical-align: middle;
-    width: 70px;
+    width: 150px;
 }
 
 .logo-img {

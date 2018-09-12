@@ -9,15 +9,15 @@ Main page styles
 
 .display-4 {
     font-family: 'Walter Turncoat', cursive;
-    margin-top: 10px;
+    margin-top:10px;
 }
 
 .events-header {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 18px;
+    font-size:18px;
     color: #ffffff;
     text-align: center;
-    margin-top: 10px;
+    margin-top:10px;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
