@@ -30,11 +30,11 @@
                 <td>
                     <div *ngIf="rfbEventAttendance.rfbEventDTO">
                         <a [routerLink]="['../rfb-event', rfbEventAttendance.rfbEventDTO.id  ]" >
-                            {{rfbEventAttendance.rfbLocationDTO.locationName}} : {{rfbEventAttendance.attendanceDate | date}}</a>
+                            {{rfbEventAttendance.rfbEventDTO.rfbLocationDTO.locationName}} : {{rfbEventAttendance.attendanceDate | date}}</a>
                     </div>
                 </td>
                 <td>
-                    <div *ngIf="rfbEventAttendance.rfbUserId">
+                    <div *ngIf="rfbEventAttendance.rfbUserDTO">
                         <a [routerLink]="['../rfb-user', rfbEventAttendance.rfbUserDTO.id  ]" >{{rfbEventAttendance.rfbUserDTO.username}}</a>
                     </div>
                 </td>

@@ -1,0 +1,9 @@
+version: '2'
+services:
+    rfbloyalty-smtp:
+        image: djfarrelly/maildev
+        # volumes:
+        #     - ~/volumes/jhipster/rfbloyalty/mysql/:/var/lib/mysql/
+        ports:
+            - "1025:25"
+            - "1080:80"

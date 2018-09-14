@@ -12,12 +12,10 @@ import org.mapstruct.Mapping;
 public interface RfbEventAttendanceMapper extends EntityMapper <RfbEventAttendanceDTO, RfbEventAttendance> {
 
     @Mapping(source = "rfbEvent", target = "rfbEventDTO")
-
     @Mapping(source = "rfbUser", target = "rfbUserDTO")
     RfbEventAttendanceDTO toDto(RfbEventAttendance rfbEventAttendance);
 
     @Mapping(source = "rfbEventDTO", target = "rfbEvent")
-
     @Mapping(source = "rfbUserDTO", target = "rfbUser")
     RfbEventAttendance toEntity(RfbEventAttendanceDTO rfbEventAttendanceDTO);
     default RfbEventAttendance fromId(Long id) {

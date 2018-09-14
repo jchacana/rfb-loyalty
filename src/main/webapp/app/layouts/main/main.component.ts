@@ -9,7 +9,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class JhiMainComponent implements OnInit {
 
-    cardStyles: string;
+    public cardStyles: string;
+    public currentRoute: string;
 
     constructor(private titleService: Title, private router: Router) {}
 
@@ -18,6 +19,7 @@ export class JhiMainComponent implements OnInit {
         if (routeSnapshot.firstChild) {
             title = this.getPageTitle(routeSnapshot.firstChild) || title;
         }
+        this.currentRoute = this.router.url;
         return title;
     }
 
